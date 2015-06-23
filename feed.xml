@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mappings</title>
+    <description>In which I work through problems and write explorable explanations.
+</description>
+    <link>http://christosilvia.github.io/</link>
+    <atom:link href="http://christosilvia.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 23 Jun 2015 16:26:02 -0400</pubDate>
+    <lastBuildDate>Tue, 23 Jun 2015 16:26:02 -0400</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Math Notation with MathJax and Jekyll</title>
+        <description>&lt;p&gt;I am configuring Latex preprocessors for math blogging. 
+The first one I’ve tried is MathJax, which does client-side rendering.
+It seems slow on my laptop, but it is extremely simple.
+I got it working in under a half an hour.&lt;/p&gt;
+
+&lt;p&gt;I found out about &lt;a href=&quot;http://www.flx.cat/jekyll/2013/11/10/liquid-latex-jekyll-plugin.html&quot;&gt;liquid latex&lt;/a&gt;
+	from googling, but that website is very difficult to read.
+Fortunately, they link to the &lt;a href=&quot;https://github.com/fgalindo/jekyll-liquid-latex-plugin&quot;&gt;github repo&lt;/a&gt;.
+The repo is &lt;a href=&quot;https://en.wikipedia.org/wiki/MIT_License&quot;&gt;MIT Licensed&lt;/a&gt;, and the installation
+	instructions direct me to copy &lt;code&gt;liquid_latex.rb&lt;/code&gt; to my &lt;code&gt;_plugins&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget https://raw.githubusercontent.com/fgalindo/jekyll-liquid-latex-plugin/master/liquid_latex.rb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;One minor point of confusion is that nobody told me that I would have to create my own &lt;code&gt;_plugins&lt;/code&gt;
+	directory.
+From there, the configuration instructions direct me to update my &lt;code&gt;_config.yml&lt;/code&gt;.
+I copied the config information verbatum into my &lt;code&gt;_config.yml&lt;/code&gt;.
+Unfortunately, it didn’t work when I copied in the defaults, but it worked with not config.  Strange.&lt;/p&gt;
+
+&lt;p&gt;Next, I tried it out:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-f9673c8b4558b99b074274d23832d428.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hooray!&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 23 Jun 2015 12:00:00 -0400</pubDate>
+        <link>http://christosilvia.github.io/jekyll/math/mathjax/latex/notation/2015/06/23/Writing-Math.html</link>
+        <guid isPermaLink="true">http://christosilvia.github.io/jekyll/math/mathjax/latex/notation/2015/06/23/Writing-Math.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>math</category>
+        
+        <category>mathjax</category>
+        
+        <category>latex</category>
+        
+        <category>notation</category>
+        
+      </item>
+    
+      <item>
+        <title>Math Research</title>
+        <description>&lt;p&gt;This summer I’m going to be doing math research with &lt;a href=&quot;https://www.math.cornell.edu/m/People/Faculty/strichartz&quot;&gt;Bob Strichartz&lt;/a&gt; this summer.  We’re going to be trying to develop a theory of analysis on fractals and other rough spaces.&lt;/p&gt;
+
+&lt;p&gt;This was the only summer program I applied to.
+The previous summer, my mom got me a job working as a research assistant at
+	catholic university’s vitreous state lab.
+I wasn’t particularly productive there.
+The one good thing that came of that was that I began reading textbooks independently.
+I started out reading David Griffiths excellent Introduction to Quantum Mechanics textbook.
+I might do a fuller review later, here’s a wonderful &lt;a href=&quot;http://www.physicspages.com/index-physics-quantum-mechanics/griffiths-introduction-to-quantum-mechanics-problems/&quot;&gt;set of commentary and solutions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ve met many many other people who learned differential equations from griffiths.
+It’s rather embarassing how common this is.
+It could be that this is the first class in which solving differential equations is “expected” of us students.
+Many of the people who I knew took differential equations (ex: Sascha) forgot everything about it,
+	but everybody who’s used differential equations in quantum knows a thing or two about actually
+	solving them.
+The next best resource is definitely Farlow’s &lt;a href=&quot;http://www.amazon.com/Differential-Equations-Scientists-Engineers-Mathematics/dp/048667620X&quot;&gt;Partial Differential Equations for Scientists and Engineers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Anyways, at the beginning of spring semester, I knew that I needed to apply to some sort of summer program.
+I didn’t particularly want to, it was much more of a push than a pull.
+I was afraid of not having anything to do during the summer.
+When I was told that I missed the deadline for Cornell’s summer math program, I was carrying Vivian’s
+	books at the time.
+I dropped the books.
+I then quickly talked to Bob and applied to his group, and I was fortunately accepted.&lt;/p&gt;
+
+&lt;p&gt;I had a tremendous amount of difficulty working through the background reading, and now here I am starting
+	the first real week of work after the background lectures.
+Wish me luck!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 14 Jun 2015 11:30:00 -0400</pubDate>
+        <link>http://christosilvia.github.io/math/2015/06/14/Math-Research.html</link>
+        <guid isPermaLink="true">http://christosilvia.github.io/math/2015/06/14/Math-Research.html</guid>
+        
+        
+        <category>math</category>
+        
+      </item>
+    
+      <item>
+        <title>Writing Jekyll blog posts with Vim and Git</title>
+        <description>&lt;p&gt;I’m going to lie to you in this blog post.  As you read this, I think that you’re assuming I sat down 
+to write this (after some inspiration of course!) and then wrote the whole thing in one go.  At least, I 
+bet that you thought that I wrote the beginning before the end.  Wrong.  Here’s the completed paragraph:&lt;/p&gt;
+
+&lt;p&gt;As I sit down to write about &lt;a href=&quot;www.bro.ken&quot;&gt;making mathematica-style manipulate on the web&lt;/a&gt;, 
+I come across a problem.  That problem is apostrophes.  Vim does some markdown syntax 
+highlighting.  Right now vim is making the string “Writing Jekyll blog posts with Vim and Git”
+appear red to me.  Now, I want to take a screenshot.  I am running ubuntu, with the (i3)[i3wm.org] 
+window manager installed.  I google “screenshots ubuntu” (note that the text in quotes is red), and I get
+an &lt;a href=&quot;http://askubuntu.com/questions/6558/what-screenshot-tools-are-available&quot;&gt;askubuntu post&lt;/a&gt; (which just 
+taught me that &lt;code&gt;&quot;+p&lt;/code&gt; is the vim paste command), and the askubuntu post tells me that there is a tool called
+&lt;a href=&quot;shutter-project.org&quot;&gt;shutter&lt;/a&gt; which lets me take screenshots on ubuntu.&lt;/p&gt;
+
+&lt;p&gt;Now I know what to do:
+&lt;code&gt;bash
+$ sudo apt-get install shutter
+...
+After this operation, 32.3 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Just to be clear, the original goal of this was to make the vim syntax highlighting be sane about apostrophes
+in markdown, and not treat them like they’re quotes.  To show you this problem, I’m installing a screenshot
+tool.  I originally encountered this problem when trying to write another blog post.&lt;/p&gt;
+
+&lt;p&gt;I type &lt;code&gt;$ shutter&lt;/code&gt; and looks like it has a gui.  Shit.  Close that.  Google “shutter
+screenshots command line”.  A nice helpul &lt;a href=&quot;http://www.linuxstall.com/take-screenshot-in-linux-with-shutter/&quot;&gt;tutorial&lt;/a&gt; 
+(so glad i didn’t have to type that whole url, because of the neat handy &lt;code&gt;&quot;+p&lt;/code&gt; command). 
+It tells me that i need to execute &lt;code&gt;$ shutter --full&lt;/code&gt; to take a screenshot.  I do so, but a
+notification pops up (that I can’t screenshot, sorry) telling me where it saved the screenshot.
+The notification fades very fast.  Time to go hunting around my filesystem to see where the screenshot went.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ ls ~
+college dev Downloads Dropbox media res tmp work Workspace 2_001.png
+&lt;/code&gt;
+In order to get the above image, I’m trying to toy around with xclip.  I do &lt;code&gt;$ ls ~ | xclip -i&lt;/code&gt; (the ‘-i’
+ is for in), and it works? Nope!  Not sure what’s wrong!  I won’t be, I’ve already wasted enough time 
+that I just typed it manually.&lt;/p&gt;
+
+&lt;h3 id=&quot;lets-back-up-a-bit&quot;&gt;Let’s back up a bit.&lt;/h3&gt;
+
+&lt;p&gt;As I sit down to write about (making mathematica-style manipulate on the web)[www.bro.ken], 
+I come across a problem.  That problem is apostrophes.  Vim does some markdown syntax 
+highlighting.  Right now vim is making the string “Writing Jekyll blog posts with Vim and Git”
+appear red to me.  Now, I want to take a screenshot.  I am running ubuntu, with the (i3)[i3wm.org] 
+window manager installed.  I google “screenshots ubuntu” (note that the text in quotes is red), and I get
+an &lt;a href=&quot;http://askubuntu.com/questions/6558/what-screenshot-tools-are-available&quot;&gt;askubuntu post&lt;/a&gt; (which just 
+taught me that &lt;code&gt;&quot;+p&lt;/code&gt; is the vim paste command), and the askubuntu post tells me that there is a tool called
+(shutter)[shutter-project.org] which lets me take screenshots on ubuntu.&lt;/p&gt;
+
+&lt;p&gt;I just pasted a paragraph from above, which means that I need to know how to copy and paste text in vim.
+I know how to paste, not how to copy.  Google gets me 
+&lt;a href=&quot;http://www.tech-recipes.com/rx/219/copy-and-paste-text-with-vi-or-vim/&quot;&gt;here&lt;/a&gt; which might help.&lt;br /&gt;
+Nope, let’s do &lt;a href=&quot;http://vim.wikia.com/wiki/Copy,_cut_and_paste&quot;&gt;this&lt;/a&gt; instead.  The text is still interpreting 
+anything posessive as a quote, making this crazy red.  But, I can embed pitures!&lt;/p&gt;
+
+&lt;p&gt;Oh, wait, I’m using Jekyll.  I have to look up how to embed pictures.  &lt;a href=&quot;https://www.google.com/search?client=ubuntu&amp;amp;channel=fs&amp;amp;q=embed+pictures+in+Jekyll&amp;amp;ie=utf-8&amp;amp;oe=utf-8&quot;&gt;Google&lt;/a&gt;
+then &lt;a href=&quot;http://jekyllrb.com/docs/posts/&quot;&gt;the official jekyll site&lt;/a&gt; which says midway down that you can 
+add in an image asset in a post.  I have to move the screenshot to assets (good get it out of my home 
+directory!)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ ls ~/dev/jekyll-blog
+about.md  _config.yml   css       _includes   _layouts  README.md  _site
+about.md~ _config.yml~  feed.xml  index.html  _posts    _sass
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Is assets in &lt;code&gt;includes&lt;/code&gt;? &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+~/dev/jekyll-blog$ ls _includes
+footer.html header.html head.html
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Assets is probably not in includes.  Do I have to create it?  Yes, back on the &lt;a href=&quot;http://jekyllrb.com/docs/posts/&quot;&gt;official jekyll site&lt;/a&gt; it says that I need to make a directory called “something like &lt;code&gt;assets&lt;/code&gt; or &lt;code&gt;downloads&lt;/code&gt;, into which any images, downloads, or other resources are placed.”  Okay.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;~/dev/jekyll-blog$ mkdir assets&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;~/dev/jekyll-blog$ mv ~/Workspace\ 2_001.png assets&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;~/dev/jekyll-blog$ ls assets&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Workspace 2_001.png&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;~/dev/jekyll-blog$ mv assets/Workspace\ 2_001.png assets/red.png&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Yay, it’s here.  It should appear below.
+&lt;img src=&quot;http://christosilvia.github.io/assets/red.png&quot; alt=&quot;If it's not broken this should be an image&quot; /&gt;.&lt;/p&gt;
+
+&lt;p&gt;Of course, I go to look and it’s not there.  Wtf.  &lt;/p&gt;
+
+&lt;p&gt;Maybe the directory needs to be named &lt;code&gt;_assets&lt;/code&gt; and not &lt;code&gt;assets&lt;/code&gt;?  That doesn’t fix it.&lt;/p&gt;
+
+&lt;h3 id=&quot;lets-start-over&quot;&gt;Let’s start over&lt;/h3&gt;
+
+&lt;p&gt;As I sit down to write about (making mathematica-style manipulate on the web)[www.bro.ken], 
+I come across a problem.  That problem is apostrophes.  Vim does some markdown syntax 
+highlighting.  Right now vim is making the string “Writing Jekyll blog posts with Vim and Git”
+appear red to me.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://christosilvia.github.io/assets/red.png&quot; alt=&quot;Ahaha sucker&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I give up.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Mar 2015 14:31:00 -0400</pubDate>
+        <link>http://christosilvia.github.io/vim/git/meta/2015/03/15/Writing-Posts-With-Vim.html</link>
+        <guid isPermaLink="true">http://christosilvia.github.io/vim/git/meta/2015/03/15/Writing-Posts-With-Vim.html</guid>
+        
+        
+        <category>vim</category>
+        
+        <category>git</category>
+        
+        <category>meta</category>
+        
+      </item>
+    
+      <item>
+        <title>Maniuplating Graphs with mpld3</title>
+        <description>&lt;p&gt;Have you seen mathematica?&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Mar 2015 14:27:15 -0400</pubDate>
+        <link>http://christosilvia.github.io/mpld3/d3/graphs/explorable-explanations/2015/03/15/manipulating-graphs-on-the-web.html</link>
+        <guid isPermaLink="true">http://christosilvia.github.io/mpld3/d3/graphs/explorable-explanations/2015/03/15/manipulating-graphs-on-the-web.html</guid>
+        
+        
+        <category>mpld3</category>
+        
+        <category>d3</category>
+        
+        <category>graphs</category>
+        
+        <category>explorable-explanations</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 08 Mar 2015 14:10:14 -0400</pubDate>
+        <link>http://christosilvia.github.io/jekyll/update/2015/03/08/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://christosilvia.github.io/jekyll/update/2015/03/08/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Doing Research</title>
+        <description>&lt;p&gt;This summer, I will be working with Bob Strichartz doing analysis on fractals, I hope.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Mar 2015 00:00:00 -0500</pubDate>
+        <link>http://christosilvia.github.io/2015/03/08/Doing-Research.html</link>
+        <guid isPermaLink="true">http://christosilvia.github.io/2015/03/08/Doing-Research.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
