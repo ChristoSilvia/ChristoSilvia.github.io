@@ -6,8 +6,8 @@
 </description>
     <link>http://christosilvia.github.io/</link>
     <atom:link href="http://christosilvia.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 06 Jul 2015 03:52:36 -0400</pubDate>
-    <lastBuildDate>Mon, 06 Jul 2015 03:52:36 -0400</lastBuildDate>
+    <pubDate>Mon, 06 Jul 2015 04:06:08 -0400</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2015 04:06:08 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -199,7 +199,7 @@ We can inductively construct these paths.&lt;/p&gt;
 
 &lt;p&gt;Consider the paths:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spike_0.png&quot; alt=&quot;base-spike&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_0.png&quot; alt=&quot;base-spike&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;and&lt;/p&gt;
 
@@ -212,6 +212,53 @@ Next, note that the flat path starts and ends at the same place as the
 It (trivially) touches every other point.
 Therefore, for the 0th level serpinski gasket, we have constructed
 	paths which satisfy our conditions.&lt;/p&gt;
+
+&lt;h3 id=&quot;inductive-step&quot;&gt;Inductive Step&lt;/h3&gt;
+
+&lt;p&gt;We want to construct a pair of spiked path and flat path for the m+1-th
+	level serpinski gasket, if the m-th level serpinski gasket has
+	such a path.
+Note that if the m-th level serpinski gasket has a pair of spiked path
+	and flat path, then we can put those paths into one of the three
+	subtriangles of the serpinski gasket.&lt;/p&gt;
+
+&lt;p&gt;To construct a m+1-th spiked path, we join the lower left and upper vertices
+	of the triangle with the m-th spiked path, so that the intersetion
+	between the lower-left and lower-right triangles is covered by this path.
+Next, the upper triangle is traversed from left to right by a spiked path.
+Finally, the lower-left triangle is traversed from top to bottom-right by a flat path.
+This path joins the lower left with the lower right, and touches the top vertex, 
+	and is a spanning tree.
+Therefore, this path is an m+1-th spiked path.&lt;/p&gt;
+
+&lt;p&gt;To construct an m+1-th flat path, we replace the spiked paths with flat paths in 
+	the previous construction.
+Note that since the m-th flat path is a flat path, when superimposed with the m-th
+	spiked path they do not overlap, and together use all of the edges on
+	the serpinski gasket.
+The m+1-th flat path does not include the top vertex because the m-th flat path
+	doesn’t.
+This satisfies all of the properties that an m+1-th flat path needs to satisfy.&lt;/p&gt;
+
+&lt;p&gt;Below, we feature some of these paths.&lt;/p&gt;
+
+&lt;h4 id=&quot;st-spiked-path&quot;&gt;1st spiked path&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_1.png&quot; alt=&quot;spiked-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_1.png&quot; alt=&quot;flat-1&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;st-spiked-path-1&quot;&gt;2st spiked path&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_2.png&quot; alt=&quot;spiked-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_2.png&quot; alt=&quot;flat-2&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;st-spiked-path-2&quot;&gt;3st spiked path&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_3.png&quot; alt=&quot;spiked-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_3.png&quot; alt=&quot;flat-3&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 06 Jul 2015 00:00:00 -0400</pubDate>
