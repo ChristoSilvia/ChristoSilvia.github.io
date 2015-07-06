@@ -6,8 +6,8 @@
 </description>
     <link>http://christosilvia.github.io/</link>
     <atom:link href="http://christosilvia.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 06 Jul 2015 03:16:46 -0400</pubDate>
-    <lastBuildDate>Mon, 06 Jul 2015 03:16:46 -0400</lastBuildDate>
+    <pubDate>Mon, 06 Jul 2015 03:18:26 -0400</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2015 03:18:26 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -167,7 +167,7 @@ Note that the normalization factors nicely cancel each other out.&lt;/p&gt;
 &lt;p&gt;The graph representations at level 0 of the serpinski gasket is just
 	a triangle:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/_assets/vertices_level_0.png&quot; alt=&quot;level-0&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/ChristoSilvia.github.io/master/_assets/vertices_level_0.png&quot; alt=&quot;level-0&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Add one more level:&lt;/p&gt;
 
