@@ -6,8 +6,8 @@
 </description>
     <link>http://christosilvia.github.io/</link>
     <atom:link href="http://christosilvia.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 06 Jul 2015 03:29:49 -0400</pubDate>
-    <lastBuildDate>Mon, 06 Jul 2015 03:29:49 -0400</lastBuildDate>
+    <pubDate>Mon, 06 Jul 2015 03:41:41 -0400</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2015 03:41:41 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -167,11 +167,11 @@ Note that the normalization factors nicely cancel each other out.&lt;/p&gt;
 &lt;p&gt;The graph representations at level 0 of the serpinski gasket is just
 	a triangle:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/ChristoSilvia.github.io/master/_assets/vertices_level_0.png&quot; alt=&quot;level-0&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/vertices_level_0.png&quot; alt=&quot;level-0&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Add one more level:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/ChristoSilvia.github.io/master/_assets/vertices_level_1.png&quot; alt=&quot;level-0&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/vertices_level_1.png&quot; alt=&quot;level-0&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And so on.
 If we’re working with an mth level approximation, we’re going to represent
@@ -192,6 +192,8 @@ We will then construct another path which starts and ends at the same points
 	touches all of the vertices, and does not use any of the edges
 	that the first path used.
 We can inductively construct these paths.&lt;/p&gt;
+
+&lt;p&gt;Consider the paths&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 06 Jul 2015 00:00:00 -0400</pubDate>
