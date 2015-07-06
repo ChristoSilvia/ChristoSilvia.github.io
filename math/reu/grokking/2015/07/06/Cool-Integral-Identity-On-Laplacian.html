@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Mappings</title>
+    <title>Grokking the Product Rule</title>
     <meta name="description" content="In which I work through problems and write explorable explanations.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://christosilvia.github.io/">
+    <link rel="canonical" href="http://christosilvia.github.io/math/reu/grokking/2015/07/06/Cool-Integral-Identity-On-Laplacian.html">
 </head>
 
 
@@ -58,85 +58,103 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title">Grokking the Product Rule</h1>
+    <p class="post-meta">Jul 6, 2015</p>
+  </header>
 
-  <ul class="post-list">
+  <article class="post-content">
+    <p>This post is going to be about an integral identity called the
+	<a href="https://en.wikipedia.org/wiki/Product_rule">product rule</a>.
+This identity is going to be central to an efficient
+	scheme for computing the energy-laplacian matrix
+	for the serpinski gasket.
+It’s also cool.</p>
+
+<p>In regular normal one-dimensional calculus, we define the derivative:</p>
+
+<p><img src="/latex/latex-737d2eb6622e021220c63e14ddec64f1.png" /></p>
+
+<p>Let’s explore some of the properties.
+Some functions can be split into a product of two other functions.
+For example, <img src="/latex/latex-2b1da92727ecca7e2e16c4c4616abbb8.png" />
+	can be split into two functions in the following way:
+	<img src="/latex/latex-985a4943240409d2e247d085a11f38ba.png" />.
+If <img src="/latex/latex-4d00ad1f87ade895fb298a3b4c40ba99.png" /> is of this form, 
+	then knowing a rule for determining <img src="/latex/latex-207ca5a8f7bb215499f1d4155e7449af.png" /> from <img src="/latex/latex-fc16282f28a71eb0355b8516f28eac31.png" /> and <img src="/latex/latex-e31b212e1c2877a7f9219586c973d541.png" />
+	might be valuable and save a good deal of effort.
+If you want to, you might want to stop reading and try to figure out
+	a way to do this yourself.
+It will be rewarding even if you give up and keep reading.</p>
+
+<p>Our first step in trying to figure out this rule is simply to use
+	the definition of a derivative.</p>
+
+<p><img src="/latex/latex-02f9c7ff38b64cc6252ca125b928deb0.png" /></p>
+
+<p>What would be a nice form for this to take?
+If the right side would perhaps contain either </p>
+
+<p><img src="/latex/latex-fa738825f7f36061c1593ecf545fa670.png" /> </p>
+
+<p>or </p>
+
+<p><img src="/latex/latex-391b35b64c3f8e2c5b3f6dbae7aed1a7.png" /></p>
+
+<p>then the formula would be very nice: it would simply express the 
+	derivative of <img src="/latex/latex-f5db0e392fb80e56fe541b91d7eb981d.png" />
+	in terms of the derivatives of its parts.</p>
+
+<p>With that motivation in mind, I’m going to try to refactor the expression
+	for the derivative of <img src="/latex/latex-ef2c32d7fbbb61a8a99d016756552239.png" />.
+We assume that the functions involved are contintuous.</p>
+
+<p><img src="/latex/latex-5044aa767cf23fceade0da1eb44b2331.png" /></p>
+
+<p>I learned this under the name of the <em>product rule</em>.</p>
+
+<p>We can use this fact about derivatives to learn a fact about integrals.
+We use newton’s Fundamental Theorem of Calculus:</p>
+
+<p><img src="/latex/latex-2d1d936416bb816b3599f9d7260856af.png" /></p>
+
+<p>On the function <img src="/latex/latex-eca6adc75f5d5952e1b2df28c2e5e0fe.png" />:</p>
+
+<p><img src="/latex/latex-9940ae16c0e2750056a61e6af5d5dcb3.png" /></p>
+
+<p>for <em>any two functions</em>.</p>
+
+  </article>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'mappings';
     
-      <li>
-        <span class="post-meta">Jul 6, 2015</span>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-        <h2>
-          <a class="post-link" href="/math/reu/grokking/2015/07/06/Cool-Integral-Identity-On-Laplacian.html">Grokking the Product Rule</a>
-        </h2>
-      </li>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'mappings';
     
-      <li>
-        <span class="post-meta">Jul 6, 2015</span>
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 
-        <h2>
-          <a class="post-link" href="/math/2015/07/06/Computing-The-Laplacian.html">Computing The Laplacian</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jun 28, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/math/grad/college/2015/06/28/Math-Grad-School.html">A Talk About Math Grad School</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jun 23, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/math/mathjax/latex/notation/2015/06/23/Writing-Math.html">Math Notation with MathJax and Jekyll</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jun 14, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/math/2015/06/14/Math-Research.html">Math Research</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 15, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/vim/git/meta/2015/03/15/Writing-Posts-With-Vim.html">Writing Jekyll blog posts with Vim and Git</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 15, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/mpld3/d3/graphs/explorable-explanations/2015/03/15/manipulating-graphs-on-the-web.html">Maniuplating Graphs with mpld3</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 8, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2015/03/08/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 8, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/2015/03/08/Doing-Research.html">Doing Research</a>
-        </h2>
-      </li>
-    
-  </ul>
 
 </div>
 

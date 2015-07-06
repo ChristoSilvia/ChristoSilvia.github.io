@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Math Notation with MathJax and Jekyll</title>
+    <title>Computing The Laplacian</title>
     <meta name="description" content="In which I work through problems and write explorable explanations.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://christosilvia.github.io/jekyll/math/mathjax/latex/notation/2015/06/23/Writing-Math.html">
+    <link rel="canonical" href="http://christosilvia.github.io/math/2015/07/06/Computing-The-Laplacian.html">
 </head>
 
 
@@ -61,36 +61,96 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Math Notation with MathJax and Jekyll</h1>
-    <p class="post-meta">Jun 23, 2015</p>
+    <h1 class="post-title">Computing The Laplacian</h1>
+    <p class="post-meta">Jul 6, 2015</p>
   </header>
 
   <article class="post-content">
-    <p>I am configuring Latex preprocessors for math blogging. 
-The first one I’ve tried is MathJax, which does client-side rendering.
-It seems slow on my laptop, but it is extremely simple.
-I got it working in under a half an hour.</p>
+    <p>This post is going to be somewhat longer, because I’m going
+	to cover something that I’ve been doing in my math program.
+It may also have some background which I will link to and expand on.
+The first section of this post presents work done by Bob Strichartz,
+	while the second part contains my work.</p>
 
-<p>I found out about <a href="http://www.flx.cat/jekyll/2013/11/10/liquid-latex-jekyll-plugin.html">liquid latex</a>
-	from googling, but that website is very difficult to read.
-Fortunately, they link to the <a href="https://github.com/fgalindo/jekyll-liquid-latex-plugin">github repo</a>.
-The repo is <a href="https://en.wikipedia.org/wiki/MIT_License">MIT Licensed</a>, and the installation
-	instructions direct me to copy <code>liquid_latex.rb</code> to my <code>_plugins</code> directory.</p>
+<h3 id="theorem-carr-duchamps">Theorem (Carré-DuChamps)</h3>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>wget https://raw.githubusercontent.com/fgalindo/jekyll-liquid-latex-plugin/master/liquid_latex.rb</code></pre></div>
+<p>Suppose <img src="/latex/latex-1376255d5363f16f6d0bf4755bc3f684.png" /> is an energy measure defined 
+	by harmonic functions <img src="/latex/latex-338b9a6e2dcea8115370a119b9d7dc9f.png" /> and 
+	<img src="/latex/latex-94e3272fa69f39d4755779ac0021420c.png" />.
+Then:</p>
 
-<p>One minor point of confusion is that nobody told me that I would have to create my own <code>_plugins</code>
-	directory.
-From there, the configuration instructions direct me to update my <code>_config.yml</code>.
-I copied the config information verbatum into my <code>_config.yml</code>.
-Unfortunately, it didn’t work when I copied in the defaults, but it worked with not config.  Strange.</p>
+<p><img src="/latex/latex-5c886e927847e7875fe787300e6e5855.png" /></p>
 
-<p>Next, I tried it out:</p>
+<p>First of all, this looks superficially similar to the definition of the
+	Christoffel Symbols in riemannian geometry.
+Points to anybody who figures out if there’s a real connection there.</p>
 
-<p><img src="/latex/latex-1256d332106687c0b609ae4da2a5e3fb.png" /></p>
+<h3 id="our-energy-measures">Our Energy Measures</h3>
 
-<p>Hooray!</p>
+<p>For our purposes, we consider energy measures of the form:</p>
 
+<p><img src="/latex/latex-c755520b313851e51f432732e2b7aaf3.png" /></p>
+
+<p>The integral of a function <img src="/latex/latex-d5be9597b9b93a8c5e585a9c98b2f5bc.png" /> with respect to
+	this energy measure will be:</p>
+
+<p><img src="/latex/latex-d18119dbab7ca845054f8a4b8c1ddabe.png" /></p>
+
+<p>The level m approximation <img src="/latex/latex-62f52c13774b65d87d756b582fbb64cb.png" /> to the energy
+	measure laplacian is:</p>
+
+<p><img src="/latex/latex-58b3bac9253815a1d1673eec3232ca46.png" /></p>
+
+<p>It turns out that we can use what we know about the serpinski gasket to compute
+	the above expression exactly.
+The function <img src="/latex/latex-c242e19318d0d08fbe6ad11dc61bb5a6.png" /> is piecewise harmonic
+	on level m, being 1 at <img src="/latex/latex-cfd3d63d29992771e390aaceb5f22d34.png" /> 
+	and zero everywhere else.
+Therefore, we can express the energy in a finite way:</p>
+
+<p><img src="/latex/latex-f699bc8cea1e6a7312c48d960f4fe846.png" /></p>
+
+<p>We notice that almost every term in the sum of the energy is zero;
+	the only nonzero contributions come from the vertices
+	which are adjacent to <img src="/latex/latex-cfd3d63d29992771e390aaceb5f22d34.png" />.
+If we let <img src="/latex/latex-a81b2190a510d31d944587e453fbfb77.png" /> are the
+	neighboring vertices to <img src="/latex/latex-cfd3d63d29992771e390aaceb5f22d34.png" />
+	at level m:</p>
+
+<p><img src="/latex/latex-0f9f6d0fb8e982c0e27778ba66db43d8.png" /></p>
+
+<p>Which we can condense into a formula for the integral in question:</p>
+
+<p><img src="/latex/latex-65335946569a8c50c72f0b046b3f160b.png" /></p>
+
+<p>Therefore, the denominator of the energy measure now looks like this:</p>
+
+<p><img src="/latex/latex-d9285a0c687ed5729af57f3d63e19aca.png" /></p>
+
+<p>Using our new notation for the vertices, we can now write the energy 
+	laplacian with a nice pointwise formulation.
+Note that the normalization factors nicely cancel each other out.</p>
+
+<p><img src="/latex/latex-93d56774b83c52cf6e33d607ed30a524.png" /></p>
+
+<p>With a formula like this, we can reasonable start to go around looking for
+	a way to compute the laplaian matrix, and find out some of its
+	properties including its eigenvalues and eigenvectors.</p>
+
+<h3 id="computing-the-energy-laplacian">Computing the Energy Laplacian</h3>
+
+<p>Once we begin to start considering computing the energy laplacian matrix,
+	we are presented with the problem of representing functions on
+	the serpinski gasket.</p>
+
+<p>The graph representations at level 0 of the serpinski gasket is just
+	a triangle:</p>
+
+<p><img src="/_assets/vertices_level_0.png" /></p>
+
+<p><img src="/assets/vertices_level_0.png" /></p>
+
+<p><img src="/_assets/vertices_level_0.png" alt="level-0" /></p>
 
   </article>
 

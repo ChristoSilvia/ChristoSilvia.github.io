@@ -6,9 +6,181 @@
 </description>
     <link>http://christosilvia.github.io/</link>
     <atom:link href="http://christosilvia.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Jun 2015 18:02:41 -0400</pubDate>
-    <lastBuildDate>Sun, 28 Jun 2015 18:02:41 -0400</lastBuildDate>
+    <pubDate>Mon, 06 Jul 2015 03:11:12 -0400</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2015 03:11:12 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Grokking the Product Rule</title>
+        <description>&lt;p&gt;This post is going to be about an integral identity called the
+	&lt;a href=&quot;https://en.wikipedia.org/wiki/Product_rule&quot;&gt;product rule&lt;/a&gt;.
+This identity is going to be central to an efficient
+	scheme for computing the energy-laplacian matrix
+	for the serpinski gasket.
+It’s also cool.&lt;/p&gt;
+
+&lt;p&gt;In regular normal one-dimensional calculus, we define the derivative:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-737d2eb6622e021220c63e14ddec64f1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s explore some of the properties.
+Some functions can be split into a product of two other functions.
+For example, &lt;img src=&quot;/latex/latex-2b1da92727ecca7e2e16c4c4616abbb8.png&quot; /&gt;
+	can be split into two functions in the following way:
+	&lt;img src=&quot;/latex/latex-985a4943240409d2e247d085a11f38ba.png&quot; /&gt;.
+If &lt;img src=&quot;/latex/latex-4d00ad1f87ade895fb298a3b4c40ba99.png&quot; /&gt; is of this form, 
+	then knowing a rule for determining &lt;img src=&quot;/latex/latex-207ca5a8f7bb215499f1d4155e7449af.png&quot; /&gt; from &lt;img src=&quot;/latex/latex-fc16282f28a71eb0355b8516f28eac31.png&quot; /&gt; and &lt;img src=&quot;/latex/latex-e31b212e1c2877a7f9219586c973d541.png&quot; /&gt;
+	might be valuable and save a good deal of effort.
+If you want to, you might want to stop reading and try to figure out
+	a way to do this yourself.
+It will be rewarding even if you give up and keep reading.&lt;/p&gt;
+
+&lt;p&gt;Our first step in trying to figure out this rule is simply to use
+	the definition of a derivative.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-02f9c7ff38b64cc6252ca125b928deb0.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What would be a nice form for this to take?
+If the right side would perhaps contain either &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-fa738825f7f36061c1593ecf545fa670.png&quot; /&gt; &lt;/p&gt;
+
+&lt;p&gt;or &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-391b35b64c3f8e2c5b3f6dbae7aed1a7.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;then the formula would be very nice: it would simply express the 
+	derivative of &lt;img src=&quot;/latex/latex-f5db0e392fb80e56fe541b91d7eb981d.png&quot; /&gt;
+	in terms of the derivatives of its parts.&lt;/p&gt;
+
+&lt;p&gt;With that motivation in mind, I’m going to try to refactor the expression
+	for the derivative of &lt;img src=&quot;/latex/latex-ef2c32d7fbbb61a8a99d016756552239.png&quot; /&gt;.
+We assume that the functions involved are contintuous.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-5044aa767cf23fceade0da1eb44b2331.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I learned this under the name of the &lt;em&gt;product rule&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;We can use this fact about derivatives to learn a fact about integrals.
+We use newton’s Fundamental Theorem of Calculus:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-2d1d936416bb816b3599f9d7260856af.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the function &lt;img src=&quot;/latex/latex-eca6adc75f5d5952e1b2df28c2e5e0fe.png&quot; /&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-9940ae16c0e2750056a61e6af5d5dcb3.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;for &lt;em&gt;any two functions&lt;/em&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Jul 2015 00:00:00 -0400</pubDate>
+        <link>http://christosilvia.github.io/math/reu/grokking/2015/07/06/Cool-Integral-Identity-On-Laplacian.html</link>
+        <guid isPermaLink="true">http://christosilvia.github.io/math/reu/grokking/2015/07/06/Cool-Integral-Identity-On-Laplacian.html</guid>
+        
+        
+        <category>math</category>
+        
+        <category>reu</category>
+        
+        <category>grokking</category>
+        
+      </item>
+    
+      <item>
+        <title>Computing The Laplacian</title>
+        <description>&lt;p&gt;This post is going to be somewhat longer, because I’m going
+	to cover something that I’ve been doing in my math program.
+It may also have some background which I will link to and expand on.
+The first section of this post presents work done by Bob Strichartz,
+	while the second part contains my work.&lt;/p&gt;
+
+&lt;h3 id=&quot;theorem-carr-duchamps&quot;&gt;Theorem (Carré-DuChamps)&lt;/h3&gt;
+
+&lt;p&gt;Suppose &lt;img src=&quot;/latex/latex-1376255d5363f16f6d0bf4755bc3f684.png&quot; /&gt; is an energy measure defined 
+	by harmonic functions &lt;img src=&quot;/latex/latex-338b9a6e2dcea8115370a119b9d7dc9f.png&quot; /&gt; and 
+	&lt;img src=&quot;/latex/latex-94e3272fa69f39d4755779ac0021420c.png&quot; /&gt;.
+Then:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-5c886e927847e7875fe787300e6e5855.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First of all, this looks superficially similar to the definition of the
+	Christoffel Symbols in riemannian geometry.
+Points to anybody who figures out if there’s a real connection there.&lt;/p&gt;
+
+&lt;h3 id=&quot;our-energy-measures&quot;&gt;Our Energy Measures&lt;/h3&gt;
+
+&lt;p&gt;For our purposes, we consider energy measures of the form:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-c755520b313851e51f432732e2b7aaf3.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The integral of a function &lt;img src=&quot;/latex/latex-d5be9597b9b93a8c5e585a9c98b2f5bc.png&quot; /&gt; with respect to
+	this energy measure will be:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-d18119dbab7ca845054f8a4b8c1ddabe.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The level m approximation &lt;img src=&quot;/latex/latex-62f52c13774b65d87d756b582fbb64cb.png&quot; /&gt; to the energy
+	measure laplacian is:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-58b3bac9253815a1d1673eec3232ca46.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It turns out that we can use what we know about the serpinski gasket to compute
+	the above expression exactly.
+The function &lt;img src=&quot;/latex/latex-c242e19318d0d08fbe6ad11dc61bb5a6.png&quot; /&gt; is piecewise harmonic
+	on level m, being 1 at &lt;img src=&quot;/latex/latex-cfd3d63d29992771e390aaceb5f22d34.png&quot; /&gt; 
+	and zero everywhere else.
+Therefore, we can express the energy in a finite way:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-f699bc8cea1e6a7312c48d960f4fe846.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We notice that almost every term in the sum of the energy is zero;
+	the only nonzero contributions come from the vertices
+	which are adjacent to &lt;img src=&quot;/latex/latex-cfd3d63d29992771e390aaceb5f22d34.png&quot; /&gt;.
+If we let &lt;img src=&quot;/latex/latex-a81b2190a510d31d944587e453fbfb77.png&quot; /&gt; are the
+	neighboring vertices to &lt;img src=&quot;/latex/latex-cfd3d63d29992771e390aaceb5f22d34.png&quot; /&gt;
+	at level m:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-0f9f6d0fb8e982c0e27778ba66db43d8.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Which we can condense into a formula for the integral in question:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-65335946569a8c50c72f0b046b3f160b.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Therefore, the denominator of the energy measure now looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-d9285a0c687ed5729af57f3d63e19aca.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using our new notation for the vertices, we can now write the energy 
+	laplacian with a nice pointwise formulation.
+Note that the normalization factors nicely cancel each other out.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/latex/latex-93d56774b83c52cf6e33d607ed30a524.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With a formula like this, we can reasonable start to go around looking for
+	a way to compute the laplaian matrix, and find out some of its
+	properties including its eigenvalues and eigenvectors.&lt;/p&gt;
+
+&lt;h3 id=&quot;computing-the-energy-laplacian&quot;&gt;Computing the Energy Laplacian&lt;/h3&gt;
+
+&lt;p&gt;Once we begin to start considering computing the energy laplacian matrix,
+	we are presented with the problem of representing functions on
+	the serpinski gasket.&lt;/p&gt;
+
+&lt;p&gt;The graph representations at level 0 of the serpinski gasket is just
+	a triangle:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/_assets/vertices_level_0.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/vertices_level_0.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/_assets/vertices_level_0.png&quot; alt=&quot;level-0&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Jul 2015 00:00:00 -0400</pubDate>
+        <link>http://christosilvia.github.io/math/2015/07/06/Computing-The-Laplacian.html</link>
+        <guid isPermaLink="true">http://christosilvia.github.io/math/2015/07/06/Computing-The-Laplacian.html</guid>
+        
+        
+        <category>math</category>
+        
+      </item>
     
       <item>
         <title>A Talk About Math Grad School</title>
@@ -74,7 +246,7 @@ Apply to a mix of stretch, standard, and safety schools, like with college.&lt;/
 The essays, like the GRE scores, can disqualify you, but cannot help much.
 DO NOT start your essay with :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/latex/latex-85ae7aa22102c50c1b36de4486198e96.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/latex/latex-b47ca5589a43f8c716e4e15b8a588dd6.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The essay should be a statement of interest, similar to the college admissions essay.
 Talk about why you like math, and why you want to go to grad school.
@@ -138,7 +310,7 @@ Unfortunately, it didn’t work when I copied in the defaults, but it worked wit
 
 &lt;p&gt;Next, I tried it out:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/latex/latex-f9673c8b4558b99b074274d23832d428.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/latex/latex-1256d332106687c0b609ae4da2a5e3fb.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hooray!&lt;/p&gt;
 
