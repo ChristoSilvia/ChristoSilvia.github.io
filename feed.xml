@@ -6,8 +6,8 @@
 </description>
     <link>http://christosilvia.github.io/</link>
     <atom:link href="http://christosilvia.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 06 Jul 2015 04:06:08 -0400</pubDate>
-    <lastBuildDate>Mon, 06 Jul 2015 04:06:08 -0400</lastBuildDate>
+    <pubDate>Mon, 06 Jul 2015 23:23:19 -0400</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2015 23:23:19 -0400</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -184,7 +184,10 @@ Therefore, for every element of a function’s array representaiton,
 	to it.&lt;/p&gt;
 
 &lt;p&gt;We accomplish this by indexing the serpinski gasket with a space-filling path.
-We will create a path which touches every point in the mth-level serpinski gasket
+We will store an additional path in memory.
+We will use these two paths to find all adjacent vertices.&lt;/p&gt;
+
+&lt;p&gt;We will create a path which touches every point in the mth-level serpinski gasket
 	exactly once (note that this path is a spanning tree).
 We will refer to this path as the “spiked path”.
 The path will start at one endpoint and finish at the other.
@@ -193,7 +196,9 @@ We will then construct another path which starts and ends at the same points
 	touches all of the vertices, and does not use any of the edges
 	that the first path used.
 We will refer to this path as the “flat path”.
-We can inductively construct these paths.&lt;/p&gt;
+We can inductively construct these paths.
+If we have constructed these paths according to plan, a point’s four
+	neighbors will be its neighbors on the spiked path and flat path.&lt;/p&gt;
 
 &lt;h3 id=&quot;base-case&quot;&gt;Base Case&lt;/h3&gt;
 
@@ -246,19 +251,33 @@ This satisfies all of the properties that an m+1-th flat path needs to satisfy.&
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_1.png&quot; alt=&quot;spiked-1&quot; /&gt;&lt;/p&gt;
 
+&lt;h4 id=&quot;st-flat-path&quot;&gt;1st flat path&lt;/h4&gt;
+
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_1.png&quot; alt=&quot;flat-1&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;st-spiked-path-1&quot;&gt;2st spiked path&lt;/h4&gt;
+&lt;h4 id=&quot;nd-spiked-path&quot;&gt;2nd spiked path&lt;/h4&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_2.png&quot; alt=&quot;spiked-2&quot; /&gt;&lt;/p&gt;
 
+&lt;h4 id=&quot;nd-flat-path&quot;&gt;2nd flat path&lt;/h4&gt;
+
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_2.png&quot; alt=&quot;flat-2&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;st-spiked-path-2&quot;&gt;3st spiked path&lt;/h4&gt;
+&lt;h4 id=&quot;rd-spiked-path&quot;&gt;3rd spiked path&lt;/h4&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/spiked_3.png&quot; alt=&quot;spiked-3&quot; /&gt;&lt;/p&gt;
 
+&lt;h4 id=&quot;rd-flat-path&quot;&gt;3rd flat path&lt;/h4&gt;
+
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/ChristoSilvia/mappings/master/_assets/flat_3.png&quot; alt=&quot;flat-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using this layout scheme, we can extract some of the invariants which
+	we care about.
+Let’s start with the eigenvalues:&lt;/p&gt;
+
+&lt;p&gt;When &lt;img src=&quot;/latex/latex-955ae08980c23f6c65642f83a1ab6cd3.png&quot; /&gt;,
+	&lt;img src=&quot;/latex/latex-587cabdc7d34267c6f6a0a47b4909e56.png&quot; /&gt;, and 
+	&lt;img src=&quot;/latex/latex-301bdb48ceb578382926cd20961e187a.png&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 06 Jul 2015 00:00:00 -0400</pubDate>
