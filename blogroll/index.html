@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Math Notation with MathJax and Jekyll</title>
+    <title>Blogroll</title>
     <meta name="description" content="In which I work through problems and write explorable explanations.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://christosilvia.github.io/jekyll/math/mathjax/latex/notation/2015/06/23/Writing-Math.html">
+    <link rel="canonical" href="http://christosilvia.github.io/blogroll/">
 </head>
 
 
@@ -65,66 +65,31 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Math Notation with MathJax and Jekyll</h1>
-    <p class="post-meta">Jun 23, 2015</p>
+    <h1 class="post-title">Blogroll</h1>
   </header>
 
   <article class="post-content">
-    <p>I am configuring Latex preprocessors for math blogging. 
-The first one I’ve tried is MathJax, which does client-side rendering.
-It seems slow on my laptop, but it is extremely simple.
-I got it working in under a half an hour.</p>
-
-<p>I found out about <a href="http://www.flx.cat/jekyll/2013/11/10/liquid-latex-jekyll-plugin.html">liquid latex</a>
-	from googling, but that website is very difficult to read.
-Fortunately, they link to the <a href="https://github.com/fgalindo/jekyll-liquid-latex-plugin">github repo</a>.
-The repo is <a href="https://en.wikipedia.org/wiki/MIT_License">MIT Licensed</a>, and the installation
-	instructions direct me to copy <code>liquid_latex.rb</code> to my <code>_plugins</code> directory.</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>wget https://raw.githubusercontent.com/fgalindo/jekyll-liquid-latex-plugin/master/liquid_latex.rb</code></pre></div>
-
-<p>One minor point of confusion is that nobody told me that I would have to create my own <code>_plugins</code>
-	directory.
-From there, the configuration instructions direct me to update my <code>_config.yml</code>.
-I copied the config information verbatum into my <code>_config.yml</code>.
-Unfortunately, it didn’t work when I copied in the defaults, but it worked with not config.  Strange.</p>
-
-<p>Next, I tried it out:</p>
-
-<p><img src="/latex/latex-1256d332106687c0b609ae4da2a5e3fb.png" /></p>
-
-<p>Hooray!</p>
+    <ul>
+  <li><a href="https://landonkavlie.wordpress.com">Adventures in Analysis</a></li>
+  <li><a href="logicaltightrope.com">Logical Tightrope</a></li>
+  <li><a href="eventuallyalmosteverywhere.com">Eventually Almost Everywhere</a></li>
+  <li><a href="bakingandmath.com">Baking And Math</a></li>
+  <li><a href="jeremykun.com">Math ∩ Programming</a></li>
+  <li><a href="randomdirections.com">Random Directions</a></li>
+  <li><a href="karpathy.github.io">Andrej Karpathy</a></li>
+  <li><a href="https://probmods.org">Probabilistic Models of Cognition</a></li>
+  <li><a href="https://johncarlosbaez.wordpress.com">Azimuth</a></li>
+  <li><a href="colah.github.io">colah’s blog</a></li>
+  <li><a href="slatestarcodex.com">slatestarcodex</a></li>
+</ul>
 
 
   </article>
 
-  <div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'mappings';
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'mappings';
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
 
 </div>
 
